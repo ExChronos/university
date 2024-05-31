@@ -1,0 +1,1 @@
+curl https://picsum.photos/800/400 -L > curlImg.png
