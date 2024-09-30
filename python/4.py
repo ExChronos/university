@@ -1,3 +1,6 @@
+import random
+from time import sleep
+
 class Hero:
     def __init__(self, name, health, armor, power, weapon):
         self.name=name
@@ -26,3 +29,35 @@ class Hero:
         print(f'{enemy.name} покачнулся\n')
         print(f'класс брони упал до {enemy.armor}')
         print(f'уровень здоровья упал до {enemy.health}')
+
+
+knight = Hero('Knight', 600, 150, 75, 'Sword')
+barbarian = Hero('Barbarian', 700, 100, 125, 'Club')
+
+play = True
+
+while play:
+    turn = random.randint(0, 1)
+    if(turn == 0):
+        knight.strike(barbarian)
+
+        if(barbarian.health <= 0):
+            print('Рыцарь победил\n')
+            play = False
+            break
+
+        else:
+            print('Следующий ход\n')
+    elif(turn == 1):
+        barbarian.strike(knight)
+
+        if(knight.health <= 0):
+            print('Варвар победил\n')
+            play = False
+            break
+
+        else:
+            print('Следующий ход')
+    print('________________________________________')
+    sleep(2)
+
