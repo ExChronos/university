@@ -51,6 +51,8 @@ class Hero:
             else:
                 enemy.health -= self.power
                 print(f'{self.name} наносит {self.power} ед урона здоровью')
+        
+        print(f'{self.name} имеет {self.health} ОЗ и {self.armor} ОБ')
 
 class Dragon(Hero):
     def __init__(self, name, health, armor, power):
