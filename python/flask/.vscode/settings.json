@@ -1,0 +1,16 @@
+{
+    "lldb.launch.expressions": "python",
+    "vsintellicode.python.completionsEnabled": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.inlayHints.functionReturnTypes": false,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.regenerateStdLibIndices": false,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": false,
+    "python.analysis.typeEvaluation.disableBytesTypePromotions": false,
+    "python.analysis.enablePytestSupport": true,
+    "python.analysis.gotoDefinitionInStringLiteral": true,
+    "python.analysis.persistAllIndices": false,
+    "python.analysis.supportRestructuredText": false,
+    "python.analysis.autoFormatStrings": true
+}
